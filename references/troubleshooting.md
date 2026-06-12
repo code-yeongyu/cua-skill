@@ -119,7 +119,7 @@ For cloud sandboxes, also confirm they're stopped in the [cua.ai dashboard](http
 
 1. **Tighten the goal text** with a clear stop condition. Bad: "do my taxes". Better: "open the IRS Free File homepage and screenshot the list of providers; stop there".
 2. **Raise `--max-turns`** for genuinely long tasks. Defaults are 30-50; bumping to 100 is fine for tasks that need it.
-3. **Switch model** — a stronger model finishes the same task in fewer turns. `--model anthropic/claude-opus-4-7` (if available in your LiteLLM config) usually beats Sonnet on visual tasks at the cost of higher per-turn price.
+3. **Switch model** — a stronger model finishes the same task in fewer turns. `--model anthropic/claude-opus-4-8` (if available in your LiteLLM config) usually beats Sonnet on visual tasks at the cost of higher per-turn price.
 4. **Decompose** — split the task into sub-tasks and run each separately. Cheaper and easier to debug.
 
 ## `cua trajectory show <id>` is empty

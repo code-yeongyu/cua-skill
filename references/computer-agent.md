@@ -31,14 +31,14 @@ The CLI prints progress lines as the sub-agent works, then a final summary block
 `ComputerAgent` uses [LiteLLM](https://docs.litellm.ai/) under the hood, so any provider+model that supports tool-use + vision works:
 
 ```bash
-cua do task "..." --model anthropic/claude-sonnet-4-5
-cua do task "..." --model openai/gpt-5
-cua do task "..." --model gemini/gemini-2.5-pro
+cua do task "..." --model anthropic/claude-sonnet-4-6
+cua do task "..." --model openai/gpt-5.5
+cua do task "..." --model gemini/gemini-3.1-pro-preview
 ```
 
 Provider API keys are read from the standard env vars: `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `GOOGLE_API_KEY`. Set them in the shell that runs `cua` before issuing the task.
 
-The default model depends on cua version - check `cua do task --help`. Typical defaults are `anthropic/claude-sonnet-4-5` or whatever cua currently considers the most capable computer-use-ready model.
+The default model depends on cua version - check `cua do task --help`. Typical defaults are `anthropic/claude-sonnet-4-6` or whatever cua currently considers the most capable computer-use-ready model.
 
 ## Capping cost - `--max-turns`
 
